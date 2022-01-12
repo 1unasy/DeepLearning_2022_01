@@ -3,6 +3,7 @@
 # import part
 import numpy as np
 import pandas as pd
+import warnings
 import tensorflow as tf
 from sklearn.datasets import load_boston
 from sklearn.model_selection import train_test_split
@@ -11,6 +12,7 @@ from tensorflow.keras.layers import Dense
 
 # 상수값 설정 등 변수 초기화
 seed = 2022
+warnings.filterwarnings('ignore')
 np.random.seed(seed)
 tf.random.set_seed(seed)
 boston = load_boston()
