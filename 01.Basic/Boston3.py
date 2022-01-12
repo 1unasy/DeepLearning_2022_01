@@ -6,7 +6,6 @@
 # import part
 import sys
 import numpy as np
-# import warnings
 from sklearn.datasets import load_boston
 from sklearn.model_selection import train_test_split
 from tensorflow.keras.models import load_model
@@ -31,7 +30,6 @@ if index < 0 or index > 50:
 # 상수값 설정 등 변수 초기화
 seed = 2022
 model_filename = 'boston.h5'
-# warnings.filterwarnings('ignore')
 np.random.seed(seed)
 boston = load_boston()
 X_train, X_test, y_train, y_test = train_test_split(
@@ -41,8 +39,6 @@ X_train, X_test, y_train, y_test = train_test_split(
 # 저장된 메인 모델 불러오기
 model = load_model(model_filename)
 
-# 입력값 받기
-# index = int(input('0 ~ 50 사이의 정수값을 입력하세요. > '))
 test = X_test[index].reshape(1,-1)
 pred_value = model.predict(test)
 
