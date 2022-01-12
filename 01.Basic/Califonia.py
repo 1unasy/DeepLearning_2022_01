@@ -2,6 +2,7 @@
 # 캘리포니아 주택 가격의 실제값과 예측값, 그리고 오차를 보여주는 프로그램
 
 # import part
+import sys
 import numpy as np
 import pandas as pd
 from sklearn.datasets import fetch_california_housing
