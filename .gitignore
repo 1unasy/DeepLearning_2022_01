@@ -8,6 +8,7 @@ creditcard.csv
 human_activity
 model/
 OpinosisDataset1.0/
+kaggle.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
