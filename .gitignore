@@ -9,6 +9,7 @@ human_activity
 model/
 OpinosisDataset1.0/
 kaggle.json
+etriaikey.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
